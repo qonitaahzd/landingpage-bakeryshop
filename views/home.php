@@ -134,10 +134,10 @@
     </div>
 
     <div class="gallery-grid">
-        <img src="images/gallery1.jpg" alt="Gallery">
-        <img src="images/gallery2.jpg" alt="Gallery">
-        <img src="images/gallery3.jpg" alt="Gallery">
-        <img src="images/gallery4.jpg" alt="Gallery">
+        <img src="images/galleryy1.jpg" alt="Gallery">
+        <img src="images/gallery2.png" alt="Gallery">
+        <img src="images/galleryyy3.jpg" alt="Gallery">
+        <img src="images/galleryy4.jpg" alt="Gallery">
     </div>
 
 </section>
