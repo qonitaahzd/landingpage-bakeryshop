@@ -1,5 +1,7 @@
 <section class="hero" id="hero">
 
+    <div class="hero-overlay"></div>
+
     <div class="hero-content">
 
         <span>Fresh & Premium Bakery</span>
@@ -18,6 +20,10 @@
             <button class="secondary">Explore Menu</button>
         </div>
 
+    </div>
+
+    <div class="hero-image">
+        <img src="images/hero-bakery.png" alt="Bakery Hero">
     </div>
 
 </section>
