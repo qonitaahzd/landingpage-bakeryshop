@@ -180,10 +180,10 @@
             <i class="fa-solid fa-quote-left"></i>
 
             <p>
-                Cozy place with delicious pastries and beautiful atmosphere.
+                The croissant was buttery, soft, and absolutely perfect
             </p>
 
-            <h4>- Michael</h4>
+            <h4>- Sophia</h4>
 
         </div>
 
