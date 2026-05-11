@@ -1,29 +1,20 @@
-<section class="hero" id="hero">
+<section class="hero">
 
-    <div class="hero-overlay"></div>
-
-    <div class="hero-content">
+    <div class="hero-overlay">
 
         <span>Fresh & Premium Bakery</span>
 
         <h1>
-            Freshly Baked
-            Happiness Everyday
+            Freshly Baked,<br>
+            Just for You!
         </h1>
 
         <p>
-            Warm pastries, artisan bread, and delicious cakes made with love everyday.
+            Warm pastries and premium bakery made everyday.
         </p>
 
-        <div class="hero-buttons">
-            <button>Order Now</button>
-            <button class="secondary">Explore Menu</button>
-        </div>
+        <button>Order Now</button>
 
-    </div>
-
-    <div class="hero-image">
-        <img src="images/hero-bakery.png" alt="Bakery Hero">
     </div>
 
 </section>

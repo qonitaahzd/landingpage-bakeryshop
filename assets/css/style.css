@@ -34,13 +34,13 @@ body {
 .logo {
     font-size: 32px;
     font-weight: 700;
-    color: white;
+    color: #3b2416;
 }
 
 nav a {
     text-decoration: none;
     margin: 0 15px;
-    color: white;
+    color: #3b2416;
     font-weight: 500;
     transition: .3s ease;
 }
@@ -73,48 +73,84 @@ button:hover {
 .hero{
     width: 100%;
     min-height: 100vh;
-    padding: 120px 100px;
 
     background:
     linear-gradient(
-        rgba(0,0,0,0.35),
-        rgba(0,0,0,0.35)
+        rgba(255,255,255,0.08),
+        rgba(255,255,255,0.08)
     ),
-    url('images/hero-bakery.jpg');
+    url('../../images/hero-bakery.png');
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+
+    padding: 120px 20px;
 }
 
-.hero-content {
-    max-width: 650px;
-    color: white;
-    animation: fadeUp 1s ease;
+.hero-overlay{
+    background: rgba(255,248,240,0.80);
+
+    backdrop-filter: blur(3px);
+
+    padding: 28px 38px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    width: 420px;
+
+    box-shadow: 0 8px 30px rgba(0,0,0,0.06);
 }
 
-.hero-content span,
-.title span,
-.contact-content span {
-    color: #f7c59f;
+.hero-overlay span{
+    color: #b97a56;
+    font-size: 15px;
     font-weight: 600;
 }
 
-.hero-content h1 {
-    font-size: 72px;
+.hero-overlay h1{
+    font-size: 40px;
     line-height: 1.1;
-    margin: 20px 0;
+    margin: 12px 0;
+    color: #3b2416;
+    font-weight: 800;
 }
 
-.hero-content p {
-    font-size: 18px;
-    margin-bottom: 30px;
+.hero-overlay p{
+    font-size: 14px;
+    color: #6f6258;
+    margin-bottom: 18px;
 }
 
+.hero-overlay button{
+    padding: 11px 24px;
+
+    border: none;
+
+    border-radius: 999px;
+
+    background: #8b5a2b;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+}
+
+.hero-overlay button:hover{
+    background: #6f431f;
+}
 .secondary {
     background: transparent !important;
     border: 2px solid white !important;
@@ -124,7 +160,7 @@ button:hover {
 /* SECTION */
 
 section {
-    padding: 100px 80px;
+    padding: 40px 80px;
 }
 
 .title {
