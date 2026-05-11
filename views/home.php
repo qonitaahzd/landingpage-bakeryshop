@@ -175,6 +175,18 @@
 
         </div>
 
+        <div class="testimonial-card">
+
+            <i class="fa-solid fa-quote-left"></i>
+
+            <p>
+                Cozy place with delicious pastries and beautiful atmosphere.
+            </p>
+
+            <h4>- Michael</h4>
+
+        </div>
+
     </div>
 
 </section>
