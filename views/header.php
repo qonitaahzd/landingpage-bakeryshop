@@ -13,11 +13,9 @@
 <body>
 
 <header class="navbar">
-
     <div class="logo">
         BAKERY
     </div>
-
     <nav>
         <a href="#hero">Home</a>
         <a href="#why">About</a>

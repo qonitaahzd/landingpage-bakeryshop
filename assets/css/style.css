@@ -1,6 +1,291 @@
 * {
-    margin: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f3ee;
+    color: #3d2b1f;
     line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+
+.navbar {
+    width: 100%;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255,255,255,.15);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: white;
+    font-weight: 500;
+    transition: .3s ease;
+}
+
+nav a:hover {
+    color: #f7c59f;
+}
+
+.nav-btn,
+.hero-buttons button,
+.card button,
+.contact button {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 40px;
+    background: #7b4b2a;
+    color: white;
+    cursor: pointer;
+    transition: .3s ease;
+    font-weight: 500;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #5f361b;
+}
+
+/* HERO */
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+    url('../images/hero-croissant.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.hero-content {
+    max-width: 650px;
+    color: white;
+    animation: fadeUp 1s ease;
+}
+
+.hero-content span,
+.title span,
+.contact-content span {
+    color: #f7c59f;
+    font-weight: 600;
+}
+
+.hero-content h1 {
+    font-size: 72px;
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.secondary {
+    background: transparent !important;
+    border: 2px solid white !important;
+    margin-left: 15px;
+}
+
+/* SECTION */
+
+section {
+    padding: 100px 80px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.title h2 {
+    font-size: 48px;
+    margin-top: 10px;
+}
+
+/* CARD */
+
+.cards,
+.seller-grid,
+.testimonial-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card,
+.seller-card,
+.testimonial-card {
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 340px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    transition: .4s ease;
+}
+
+.card:hover,
+.seller-card:hover,
+.testimonial-card:hover {
+    transform: translateY(-10px);
+}
+
+.card img,
+.seller-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transition: .4s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.card:hover img,
+.seller-card:hover img {
+    transform: scale(1.08);
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h3,
+.seller-card h3 {
+    margin-bottom: 10px;
+}
+
+.card-content p,
+.seller-card p {
+    margin-bottom: 20px;
+}
+
+.card button {
+    margin-top: 10px;
+}
+
+.seller-card {
+    padding-bottom: 25px;
+}
+
+.seller-card h3,
+.seller-card p,
+.seller-card span {
+    padding: 0 25px;
+}
+
+.seller-card span {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 700;
+    color: #7b4b2a;
+}
+
+/* GALLERY */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: .4s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+}
+
+/* TESTIMONIAL */
+
+.testimonial-card {
+    padding: 40px;
+    text-align: center;
+}
+
+.testimonial-card i {
+    font-size: 40px;
+    color: #7b4b2a;
+    margin-bottom: 20px;
+}
+
+.testimonial-card p {
+    margin-bottom: 20px;
+}
+
+/* CONTACT */
+
+.contact {
+    background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+    url('../images/bakery-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    border-radius: 30px;
+    margin: 0 80px 80px;
+}
+
+.contact-content {
+    color: white;
+}
+
+.contact-content h2 {
+    font-size: 54px;
+    margin: 20px 0;
+}
+
+.contact-content p {
+    margin-bottom: 30px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #2a1a11;
+    color: white;
+    padding: 60px 80px 30px;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.footer-content p {
+    max-width: 600px;
+    margin: auto;
 }
 
 .socials {
@@ -24,6 +309,8 @@
     opacity: .7;
 }
 
+/* ANIMATION */
+
 @keyframes fadeUp {
     from {
         opacity: 0;
@@ -35,6 +322,8 @@
         transform: translateY(0);
     }
 }
+
+/* RESPONSIVE */
 
 @media(max-width: 768px) {
 
@@ -52,8 +341,8 @@
 
     .hero {
         padding: 20px;
-        text-align: center;
         justify-content: center;
+        text-align: center;
     }
 
     .hero-content h1 {
